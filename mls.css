@@ -1,0 +1,163 @@
+#sr-header-area {
+  background: none;
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+  color: #666;
+}
+
+#sr-header-area a {
+  color: #999;
+}
+
+#sr-header-area a:hover {
+  color: #FFF;
+  text-decoration:none;
+}
+
+.dropdown.srdrop .selected {
+  color: #999;
+}
+
+#sr-header-area a#sr-more-link {
+  border-radius: 1em 0 0 1em;
+  padding: 1px 5px;
+  top: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #333;
+}
+
+#sr-header-area a#sr-more-link:hover {
+  color: #FFF;
+}
+
+
+#sr-header-area .selected a {
+  color: #DDD;
+  background: rgba(0,0,0,0.3);
+  text-shadow: 0 -1px 0 rgba(0,0,0,1);
+  border-radius: 1em;
+  padding: 0 4px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2);
+}
+
+#header {
+  background:#333;
+  background: -webkit-linear-gradient(#595959, #1D1D1D);
+  border:none;
+  box-shadow: 0 0 5px #000;
+}
+
+#header-bottom-left {
+  background: url(./tabmenu.png) repeat-x left bottom;
+  line-height: 20px;
+  vertical-align:middle;
+}
+
+#header-img-a {
+  border: none;
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  position:relative;
+  z-index:5;
+  overflow:hidden;
+}
+
+#header-img-a:hover:after {
+  bottom:0;
+}
+
+#header-img-a:after {
+  content: attr(title);
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-40px;
+  padding: 2px 5px;
+  background:rgba(0,0,0,0.3);
+  color:rgba(255,255,255,0.9);
+  -webkit-transition: 0.5;
+}
+
+#header-img-a img {
+  margin:0;
+  padding:0;
+  border:none;
+  position:relative;
+}
+
+.pagename {
+  background: url(./mls.png);
+  display: inline-block;
+  width: 56px;
+  height: 52px;
+  text-indent: -9999px;
+  vertical-align: middle;
+}
+
+#header .tabmenu {
+  font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+#header .tabmenu li a {
+  background: none;
+  border:none;
+  color: #555;
+  text-transform: uppercase;
+  display: inline-block;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+  border-radius: 5px;
+  -webkit-transition: 0.5s text-shadow;
+}
+
+#header .tabmenu li a:hover {
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4), 0 0 20px #FFF;
+}
+#header .tabmenu .selected a, #header .tabmenu .selected a:hover {
+  background: #888;
+  color:#000;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+
+#header-bottom-right {
+  bottom: 16px;
+  line-height:22px;
+  padding: 0 5px;
+  border-radius: 5px 0 0 5px;
+  background: #999;
+  box-shadow: 0 1px rgba(255,255,255,0.2);
+  color:#777;
+  text-shadow: 0 1px 0 rgba(255,255,255,.2);
+}
+
+#header-bottom-right .separator {
+  color:#777;
+}
+
+#header-bottom-right .user {
+  color:#666;
+}
+
+#header-bottom-right a {
+  color: #444;
+}
+
+#header-bottom-right a:hover {
+  color: #FFF;
+  text-decoration:none;
+  text-shadow:none;
+}
+
+#header:after {
+  text-indent:-9999px;
+  content: 'Team Crests';
+  position:absolute;
+  right:0;
+  left:10px;
+  bottom:52px;
+  height: 32px;
+  background: url(./crests.png) no-repeat right center;
+  z-index: 4;
+}

@@ -1,0 +1,141 @@
+body {
+  background: #FFF;
+}
+
+#header {
+  background: #22292E;
+  border-bottom: none;
+}
+
+#sr-header-area {
+  background: #22292E;
+  border:none;
+  color:#FFF;
+}
+
+#sr-header-area a {
+  text-shadow: 0 -1px 0 rgba(0,0,0,1);
+  color:#FFF;
+  color: rgba(255,255,255,0.7);
+  -webkit-transition:0.5s;
+}
+
+#sr-header-area a:hover {
+  text-decoration:none;
+  color:#FFF;
+}
+
+#sr-header-area .selected a {
+  font-weight:normal;
+  background: -webkit-linear-gradient(#000, rgba(0,0,0,0.5));
+  border-radius: 1em;
+  color:#FFF;
+  padding: 2px 8px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.pagename {
+  position:absolute;
+  top: -30px;
+  left: 8px;
+  background: url(./sounders.png);
+  width: 76px;
+  height: 102px;
+  text-indent: -9999px;
+  overflow:hidden;
+}
+
+#header-bottom-left {
+  position:relative;
+  height:42px;
+  margin-top: 30px;
+  padding-left: 80px;
+  background: #5A8E22;
+  background: -webkit-linear-gradient(#61BD29, #5FAD2D 50%, #5FA92E 50%, #5D9732);
+  background: -moz-linear-gradient(#61BD29, #5FAD2D 50%, #5FA92E 50%, #5D9732);
+  box-shadow: 0 0 1px rgba(0,0,0,0.4), 0 0 15px #5D9732;
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.4), 0 0 15px #5D9732;
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.4), 0 0 15px #5D9732;
+}
+
+#header-img-a {
+  float:left;
+  text-indent: -9999px;
+  width: 42px;
+  height:42px;
+  background:url(./reddit.png) no-repeat center center;
+}
+
+.content {
+  margin-top: 30px;
+  margin-left:8px;
+}
+
+.tabmenu {
+  margin:0;
+  padding:0;
+}
+
+.tabmenu li {
+  margin:0;
+  padding:0;
+  float:left;
+  font-weight:400;
+  text-transform: uppercase;
+  font-size:10px;
+  letter-spacing: 0.1em;
+  border:none;
+  margin-top: 6px;
+}
+
+.tabmenu li a {
+  font-family: HelveticaNeue, Helvetica, arial, sans-serif;
+  display:block;
+  background: none;
+  color:rgba(255,255,255,0.8);
+  font-size: 11px;
+  line-height:30px;
+  padding:0 12px;
+  box-shadow: 1px 0 0 rgba(255,255,255,0.2), -1px 0 0 rgba(0,0,0,0.1);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+  -webkit-transition: .5s;
+}
+
+.tabmenu li.selected a {
+  border:none;
+  background:rgba(0,0,0,0.2);
+  color:#FFF;
+}
+
+.tabmenu li a:hover {
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 0 20px #FF0;
+  color:#FFF;
+}
+
+.dropdown.srdrop .selected {
+  color:#FFF;
+}
+
+#header-bottom-right {
+  position:absolute;
+  right:0;
+  bottom: 10px;
+  border-radius: 5px 0 0 5px;
+  border:none;
+  background: #1F9BEA;
+  background: -webkit-linear-gradient(#1F9BEA, #1770A8);
+  color:#FFF;
+  color:rgba(255,255,255,0.8);
+  padding:5px 8px;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.1), 0 1px 0 rgba(255,255,255,0.2);
+}
+
+#header-bottom-right a {
+  color: #FFF;
+  font-weight:normal;
+}
+
+.separator, .user {
+  color:#FFF;
+  color:rgba(255,255,255,0.5);
+}
