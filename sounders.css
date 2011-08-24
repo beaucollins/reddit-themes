@@ -14,10 +14,9 @@ body {
 }
 
 #sr-header-area a {
-  text-shadow: 0 -1px 0 rgba(0,0,0,1);
+  text-shadow: 0px -1px 0px rgb(0,0,0);
   color:#FFF;
-  color: rgba(255,255,255,0.7);
-  -webkit-transition:0.5s;
+  color: rgb(255,255,255);
 }
 
 #sr-header-area a:hover {
@@ -25,24 +24,42 @@ body {
   color:#FFF;
 }
 
+#sr-header-area #sr-more-link {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  opacity:0.9;
+  padding-left: 5px;
+  color:#000;
+  text-shadow:none;
+}
+
 #sr-header-area .selected a {
   font-weight:normal;
-  background: -webkit-linear-gradient(#000, rgba(0,0,0,0.5));
-  border-radius: 1em;
+  background: -webkit-linear-gradient(#000, #000);
+  border-radius: 5px;
   color:#FFF;
   padding: 2px 8px;
-  box-shadow: 0 1px 0 rgba(255,255,255,0.3);
-}
+/*  -webkit-box-shadow: 0px 1px 0px #FFF;
+  -moz-box-shadow: 0px 1px 0px #FFF;
+*/}
 
 .pagename {
   position:absolute;
   top: -30px;
   left: 8px;
-  background: url(./sounders.png);
   width: 76px;
   height: 102px;
-  text-indent: -9999px;
   overflow:hidden;
+}
+
+.pagename a {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-indent: -9999px;
+  background: url(%%sounders%%);
 }
 
 #header-bottom-left {
@@ -53,9 +70,10 @@ body {
   background: #5A8E22;
   background: -webkit-linear-gradient(#61BD29, #5FAD2D 50%, #5FA92E 50%, #5D9732);
   background: -moz-linear-gradient(#61BD29, #5FAD2D 50%, #5FA92E 50%, #5D9732);
-  box-shadow: 0 0 1px rgba(0,0,0,0.4), 0 0 15px #5D9732;
-  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.4), 0 0 15px #5D9732;
-  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.4), 0 0 15px #5D9732;
+  -moz-box-shadow: 0px 0px 15px #5D9732;
+  -webkit-box-shadow: 0px 0px 15px #5D9732;
+  border-top: 1px solid #3A552F;
+  border-bottom: 1px solid #C5DAB6;
 }
 
 #header-img-a {
@@ -63,7 +81,7 @@ body {
   text-indent: -9999px;
   width: 42px;
   height:42px;
-  background:url(./reddit.png) no-repeat center center;
+  background:url(%%reddit%%) no-repeat center center;
 }
 
 .content {
@@ -71,12 +89,12 @@ body {
   margin-left:8px;
 }
 
-.tabmenu {
+#header .tabmenu {
   margin:0;
   padding:0;
 }
 
-.tabmenu li {
+#header .tabmenu li {
   margin:0;
   padding:0;
   float:left;
@@ -88,27 +106,38 @@ body {
   margin-top: 6px;
 }
 
-.tabmenu li a {
+#header .tabmenu li a {
   font-family: HelveticaNeue, Helvetica, arial, sans-serif;
   display:block;
   background: none;
-  color:rgba(255,255,255,0.8);
+  color:rgb(255,255,255);
   font-size: 11px;
   line-height:30px;
   padding:0 12px;
-  box-shadow: 1px 0 0 rgba(255,255,255,0.2), -1px 0 0 rgba(0,0,0,0.1);
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-  -webkit-transition: .5s;
 }
 
-.tabmenu li.selected a {
+#header .tabmenu li:first-child a {
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+  border-left:none;
+}
+
+#header .tabmenu li:last-child a {
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  border-right:none;
+}
+
+#header .tabmenu li.selected a {
   border:none;
-  background:rgba(0,0,0,0.2);
+  background:-webkit-linear-gradient(#284520, #407033);
+  -webkit-box-shadow: 0 1px #5F9C3F;
   color:#FFF;
+  border-radius:5px;
 }
 
-.tabmenu li a:hover {
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 0 20px #FF0;
+#header .tabmenu li a:hover {
+  text-shadow: 0px -1px #3A552F, 0px 0px 20px #FF0;
   color:#FFF;
 }
 
@@ -120,14 +149,16 @@ body {
   position:absolute;
   right:0;
   bottom: 10px;
-  border-radius: 5px 0 0 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   border:none;
   background: #1F9BEA;
   background: -webkit-linear-gradient(#1F9BEA, #1770A8);
   color:#FFF;
-  color:rgba(255,255,255,0.8);
+  color:rgb(255,255,255);
   padding:5px 8px;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.1), 0 1px 0 rgba(255,255,255,0.2);
+  -webkit-box-shadow:0px 1px #85B366;
+  -moz-box-shadow:0px 1px #85B366;
 }
 
 #header-bottom-right a {
@@ -137,5 +168,5 @@ body {
 
 .separator, .user {
   color:#FFF;
-  color:rgba(255,255,255,0.5);
+  color:rgb(255,255,255);
 }
